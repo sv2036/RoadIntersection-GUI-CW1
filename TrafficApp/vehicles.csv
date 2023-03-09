@@ -1,0 +1,13 @@
+Vehicle,Type,Crossing time,Direction,Length,Emission,Status,Segment
+L23467,Track,10,Left,12,12,Waiting,S1
+A78646,Car,3,Straight,4,5,Waiting,S2
+S56438,Bus,8,Right,14,10,Crossed,S1
+A78649,Track,4,Left,3,13,Waiting,S2
+B56784,Car,4,Straight,5,6,Crossed,S3
+C46758,Bus,5,Right,6,11,Crossed,S4
+D34567,Track,6,Left,7,10,Waiting,S1
+E56789,Car,9,Straight,7,5,Waiting,S2
+F32453,Bus,10,Right,8,10,Waiting,S3
+T45634,Track,4,Left,9,11,Waiting,S4
+G56879,Car,5,Straight,3,6,Waiting,S1
+Q15899,Bus,7,Right,5,13,Crossed,S2
