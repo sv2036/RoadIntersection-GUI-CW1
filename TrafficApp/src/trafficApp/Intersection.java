@@ -8,17 +8,21 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
-public class Intersection {
-	public static void main(String[] args) {
+public class Intersection{
+	
+	public Intersection() throws IntersectionCustomException {
 		
+		//Fetching phases Data
 		ArrayList<Object> phaseList = PhaseListPanel.phaseListPanelData();
 		String[][] phaseListRowData = (String[][]) phaseList.get(0);
         String[] phaseListColumnData = (String[]) phaseList.get(1);
         
+        //Fetching vehicles Data
         ArrayList<Object> vehiclesList = VehicleListPanel.vehiclesListPanelData();
 		String[][] vehiclesListRowData = (String[][]) vehiclesList.get(0);
         String[] vehiclesListColumnData = (String[]) vehiclesList.get(1);
-				
+		
+        //fetching statistics Data
         ArrayList<Object> statisticsList = StatisticsListPanel.StatisticsListPanelData();
 		String[][] StatisticsListRowData = (String[][]) statisticsList.get(0);
         String[] StatisticsListColumnData = (String[]) statisticsList.get(1);
@@ -47,6 +51,16 @@ public class Intersection {
 	        frame.setLayout(new GridLayout(2, 1));
 	        frame.setSize(800, 800);
 	        frame.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		 try {
+	            new Intersection();
+	        } catch (IntersectionCustomException e) {
+	            System.err.println("Error: " + e.getMessage());
+	        }
 	}
 
 }
