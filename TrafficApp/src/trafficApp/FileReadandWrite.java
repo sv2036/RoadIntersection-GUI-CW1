@@ -44,7 +44,7 @@ public class FileReadandWrite {
 	//Method To Write data from CSV file based on path.
 	public void WriteDataFromCSV() 
 	{
-		String logFile = "log.txt";
+		String logFile = "Summary Report.txt";
 
         try {
             FileWriter fwriter = new FileWriter(logFile);
