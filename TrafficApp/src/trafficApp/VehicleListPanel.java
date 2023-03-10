@@ -7,7 +7,7 @@ public class VehicleListPanel {
 	public static ArrayList<Object> vehiclesListPanelData()
 	{
 		FileReadandWrite rw = new FileReadandWrite();
-		String[][] vehiclesListData=rw.readDataFromCSV("/Users/sandeep/Documents/vehicles.csv");
+		String[][] vehiclesListData=rw.readDataFromCSV("vehicles.csv");
 		String[][] vehiclesListRowData = new String[vehiclesListData.length - 1][vehiclesListData[0].length];
 		String[] vehiclesListColumnData = new String[vehiclesListData[0].length];
 		int destinationRow = 0,destinationIndex = 0;

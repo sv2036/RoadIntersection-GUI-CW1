@@ -7,7 +7,7 @@ public class PhaseListPanel {
 	public static ArrayList<Object> phaseListPanelData()
 	{
 		FileReadandWrite rw = new FileReadandWrite();
-		String[][] phaseListData=rw.readDataFromCSV("/Users/sandeep/Documents/intersection.csv");
+		String[][] phaseListData=rw.readDataFromCSV("intersection.csv");
 		String[][] phaseListRowData = new String[phaseListData.length - 1][phaseListData[0].length];
 		String[] phaseListColumnData = new String[phaseListData[0].length];
 		int destinationRow = 0,destinationIndex = 0;

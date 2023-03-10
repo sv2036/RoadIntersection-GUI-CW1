@@ -49,8 +49,8 @@ public class FileReadandWrite {
         try {
             FileWriter writer = new FileWriter(logFile);
             writer.write("Total number of vehicles crossed per phase: 10 \n");
-            writer.write("Average waiting time to cross : 12\n");
-            writer.write("Total Emissions : 12\n");
+            writer.write("Average waiting time to cross : 5 sec \n");
+            writer.write("Total Emissions : 10 205 kg\n");
             writer.close();
             
         } catch (IOException e) {
