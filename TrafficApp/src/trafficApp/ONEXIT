@@ -15,10 +15,8 @@ private JButton ExitButton;
  
 ActionEventbuttonclick (){
 
-
- }
- 
- // ActionEvent handler - Called back upon button-click
+}
+// ActionEvent handler - Called back upon button-click
 
  @Override
     public void actionPerformed(ActionEvent e) {
@@ -28,7 +26,6 @@ ActionEventbuttonclick (){
         JButton ExitButton = new ExitButton("Summary Report.txt");
    }
    
- 
   public class ReadFile {
   public static void main(String[] args) {      \\The entry main() method
     
