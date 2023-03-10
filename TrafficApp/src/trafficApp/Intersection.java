@@ -12,7 +12,7 @@ public class Intersection extends JFrame implements ActionListener{
 	private static final long serialVersionUID = 1L;
 	private JButton AddVehicleButton = null;
 	private JTable vehicleToAddTable;
-	private JButton ExitButton ;
+	public static JButton ExitButton ;
 	private JButton CancelButton = null;
 	private JPanel tablePanel;
 
