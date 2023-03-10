@@ -56,8 +56,8 @@ public class Intersection extends JFrame implements ActionListener{
 		phaseTable.setPreferredScrollableViewportSize(new Dimension(150, 100));
 
 		StatisticsTable.setPreferredScrollableViewportSize(new Dimension(200, 100));
-		phaseTable.setGridColor(Color.BLACK);
-		StatisticsTable.setGridColor(Color.BLACK); 
+		phaseTable.setGridColor(Color.GREEN);
+		StatisticsTable.setGridColor(Color.BLUE); 
 
 		//vehicle table
 		vehicleModel = new DefaultTableModel(vehiclesListRowData, vehiclesListColumnData);

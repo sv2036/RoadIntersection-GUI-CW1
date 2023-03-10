@@ -17,8 +17,8 @@ public class FileReadandWrite {
 		int counter=0;
 		String[][] fileinfo = new String[0][];
 		try {  
-            BufferedReader br = new BufferedReader(new FileReader(path));
-            while ((line = br.readLine()) != null)
+            BufferedReader breader = new BufferedReader(new FileReader(path));
+            while ((line = breader.readLine()) != null)
             {
             	counter++;
                 String[][] extracteddata = new String[counter][2];
@@ -27,7 +27,7 @@ public class FileReadandWrite {
                 System.arraycopy(fileinfo, 0, extracteddata, 0, counter - 1);
                 fileinfo = extracteddata;
             }
-            br.close();
+            breader.close();
         } 
 		catch (FileNotFoundException e) {
 			
@@ -47,11 +47,11 @@ public class FileReadandWrite {
 		String logFile = "log.txt";
 
         try {
-            FileWriter writer = new FileWriter(logFile);
-            writer.write("Total number of vehicles crossed per phase: 10 \n");
-            writer.write("Average waiting time to cross : 5 sec \n");
-            writer.write("Total Emissions : 10 205 kg\n");
-            writer.close();
+            FileWriter fwriter = new FileWriter(logFile);
+            fwriter.write("Total number of vehicles crossed per phase: 10 \n");
+            fwriter.write("Average waiting time to cross : 5 sec \n");
+            fwriter.write("Total Emissions : 10 205 kg\n");
+            fwriter.close();
             
         } catch (IOException e) {
            
