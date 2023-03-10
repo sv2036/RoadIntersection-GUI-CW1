@@ -21,7 +21,7 @@ ActionEventbuttonclick (){
  @Override
     public void actionPerformed(ActionEvent e) {
     ExitButton Btn = new ExitButton();
-        f.setDefaultCloseOperation(ExitButton.EXIT_ON_CLOSE);
+        Btn.setDefaultCloseOperation(ExitButton.EXIT_ON_CLOSE);
 
         JButton ExitButton = new ExitButton("Summary Report.txt");
    }
