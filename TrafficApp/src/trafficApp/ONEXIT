@@ -1,0 +1,28 @@
+package trafficApp;
+import javax.swing.*;
+import java.awt.*;                     // Using AWT container and component classes
+import java.awt.event.ActionEvent;     // Using AWT event classes and listener interfaces
+import java.awt.event.ActionListener;  // Using AWT event classes and listener interfaces
+
+class ActionEventbuttonclick implements ActionListener {
+ 
+private JButton ExitButton;
+ 
+ActionEventbuttonclick (){
+
+ }
+ 
+ @Override
+    public void actionPerformed(ActionEvent e) {
+    
+  
+    
+    
+    public class  {
+    public static void main(String[] args)
+    {
+        new ActionEventbuttonclick ();
+
+
+    }
+}
